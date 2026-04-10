@@ -1,11 +1,111 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Art Portfolio</title>
-  </head>
-  <body>
-    <h1>My Art</h1>
-    <img src="painting1.jpg">
-    <p>Oil on canvas, 2025</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+    <meta name="description" content="Personal portfolio showcasing creative development, design, and projects.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="logo">Dev<span>Portfolio</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="greeting">Hello, I'm</h2>
+            <h1 class="name">Alex <span class="gradient-text">Mercer</span></h1>
+            <p class="title">Creative Frontend Developer & Designer</p>
+            <p class="description">I build interactive, responsive, and visually stunning web experiences leveraging modern technologies.</p>
+            <div class="cta-group">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <div class="glow-ring"></div>
+            <!-- Generating image source correctly for live view -->
+            <img src="./portfolio_profile_picture.png" alt="Profile Picture" class="profile-img" id="profile-pic">
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="section-badge">ABOUT ME</div>
+        <h2 class="section-title">My Technical <span class="gradient-text">Arsenal</span></h2>
+        <div class="skills-container">
+            <div class="skill-pill">JavaScript (ES6+)</div>
+            <div class="skill-pill">React & Next.js</div>
+            <div class="skill-pill">TypeScript</div>
+            <div class="skill-pill">HTML5 & CSS3</div>
+            <div class="skill-pill">Node.js</div>
+            <div class="skill-pill">UI/UX Design</div>
+            <div class="skill-pill">Figma</div>
+            <div class="skill-pill">Web Animations</div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="section-badge">PORTFOLIO</div>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="projects-grid">
+            <div class="project-card glass-card">
+                <div class="project-content">
+                    <h3>Nexus E-Commerce</h3>
+                    <p>A high-performance modern e-commerce platform built with React, featuring seamless cart interactions and a beautiful dark mode UI.</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card glass-card">
+                <div class="project-content">
+                    <h3>Aura Dashboard</h3>
+                    <p>A sophisticated analytics dashboard showcasing complex data visualizations with glassmorphism aesthetics.</p>
+                    <div class="tech-stack">
+                        <span>Vue.js</span>
+                        <span>D3.js</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card glass-card">
+                <div class="project-content">
+                    <h3>Horizon Social</h3>
+                    <p>A conceptual social platform focusing on creators, with integrated web animations and real-time connectivity.</p>
+                    <div class="tech-stack">
+                        <span>Next.js</span>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="contact-card glass-card">
+            <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+            <p>I'm currently available for freelance work and open to new opportunities.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Alex Mercer. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
