@@ -159,9 +159,36 @@ a {
 }
 
 .highlight {
-    background: linear-gradient(135deg, var(--primary-color), #06b6d4);
+    background: linear-gradient(270deg, var(--primary-color), #06b6d4, var(--secondary-color), var(--primary-color));
+    background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: gradientShift 4s ease infinite;
+    display: inline-block;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.skill-tag {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: rgba(59, 130, 246, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
 .hero p {
