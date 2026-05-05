@@ -30,7 +30,7 @@
         <section id="home" class="hero section">
             <div class="hero-shape"></div>
             <div class="hero-content">
-                <h1>Hi, I'm David Mejia <span class="highlight">David Mejia</span>.</h1>
+                <h1>Hello, I'm <span class="highlight">David Mejia</span></h1>
                 <p>A passionate creator building elegant solutions.</p>
                 <a href="work.html" class="btn">Here's my work &rarr;</a>
             </div>
@@ -39,13 +39,19 @@
         <section id="work" class="section">
             <h2>My Work</h2>
             <div class="project-grid">
-                <a href="work.html" class="project-card" style="display: block;">
-                    <h3>Project One</h3>
-                    <p>A short description of this amazing project and the tools used.</p>
+                <a href="work.html" class="project-card">
+                    <div class="project-img-placeholder"></div>
+                    <div class="project-info">
+                        <h3>Project One</h3>
+                        <p>A short description of this amazing project and the tools used.</p>
+                    </div>
                 </a>
                 <div class="project-card">
-                    <h3>Project Two</h3>
-                    <p>A short description of this amazing project and the tools used.</p>
+                    <div class="project-img-placeholder"></div>
+                    <div class="project-info">
+                        <h3>Project Two</h3>
+                        <p>A short description of this amazing project and the tools used.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -56,7 +62,7 @@
                 I'm David, a dedicated professional focused on creating functional, beautiful experiences.
                 I enjoy tackling complex problems and building things from the ground up.
             </p>
-            <div class="skills" style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-top: 2.5rem;">
+            <div class="skills">
                 <span class="skill-tag">HTML</span>
                 <span class="skill-tag">CSS</span>
                 <span class="skill-tag">JavaScript</span>
@@ -67,12 +73,19 @@
         <section id="contact" class="section contact">
             <h2>Get In Touch</h2>
             <p class="section-text">Interested in working together or just want to say hi?</p>
-            <a href="mailto:davidmejia14420@gmail.com" class="btn btn-outline" style="margin-top: 1.5rem;">Email Me</a>
+            <a href="mailto:davidmejia14420@gmail.com" class="btn btn-outline contact-btn">Email Me</a>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 David Mejia. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="socials">
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+            <p>&copy; 2026 David Mejia. All rights reserved.</p>
+        </div>
     </footer>
 
     <script>
