@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Mejia | Untitled 3D Model</title>
+    <meta name="description" content="3D Artwork by David Mejia.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mejiadav.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">DM</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#work" style="color: var(--primary-color);">Work</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <main class="section" style="padding-top: 10rem; min-height: 100vh;">
+        <a href="index.html#work" class="back-link btn btn-outline" style="margin-bottom: 3rem; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1.5rem; font-size: 0.9rem;">
+            &larr; Back to Work
+        </a>
+
+        <header class="artwork-header" style="text-align: center; margin-bottom: 4rem;">
+            <h1 class="artwork-title" style="font-size: 3rem; margin-bottom: 1rem;">Untitled 3D Model</h1>
+            <p class="section-text">Interactive 3D model.</p>
+        </header>
+
+        <div class="artwork-container project-card" style="display: flex; justify-content: center; align-items: center; padding: 0; overflow: hidden;">
+            <model-viewer 
+                src="3dmodels/Untitled.glb" 
+                alt="An untitled 3D model" 
+                auto-rotate 
+                camera-controls 
+                style="width: 100%; height: 60vh; max-height: 800px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            </model-viewer>
+        </div>
+    </main>
+
+    <footer style="margin-top: auto;">
+        <p>&copy; 2026 David Mejia. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+</html>
