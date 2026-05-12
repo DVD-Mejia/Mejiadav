@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Mejia | Untitled 3D Model</title>
+    <title>David Mejia | Exercise work</title>
     <meta name="description" content="3D Artwork by David Mejia.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,14 +33,21 @@
         </a>
 
         <header class="artwork-header" style="text-align: center; margin-bottom: 4rem;">
-            <h1 class="artwork-title" style="font-size: 3rem; margin-bottom: 1rem;">Untitled 3D Model</h1>
-            <p class="section-text">Interactive 3D model.</p>
+            <h1 class="artwork-title" style="font-size: 3rem; margin-bottom: 1rem;">Exercise work</h1>
+            <p class="section-text">Interactive 3D models from my exercises.</p>
         </header>
 
-        <div class="artwork-container project-card" style="display: flex; justify-content: center; align-items: center; padding: 0; overflow: hidden;">
+        <div class="artwork-container project-card" style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 4rem; padding: 2rem;">
             <model-viewer 
                 src="3dmodels/Untitled.glb" 
                 alt="An untitled 3D model" 
+                auto-rotate 
+                camera-controls 
+                style="width: 100%; height: 60vh; max-height: 800px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            </model-viewer>
+            <model-viewer 
+                src="3dmodels/weirdworld.glb" 
+                alt="Weird world 3D model" 
                 auto-rotate 
                 camera-controls 
                 style="width: 100%; height: 60vh; max-height: 800px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
